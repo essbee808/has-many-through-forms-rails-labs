@@ -1,4 +1,5 @@
 <!-- Show link to all of the posts the user commented on -->
+<%= @user.username %>
 <% @user.posts.each do |post| %>
     <%= link_to post.title, post_path(post) %>
 

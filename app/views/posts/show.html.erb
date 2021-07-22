@@ -1,8 +1,8 @@
 
 <h1><%= @post.title %></h1>
 <p><%= @post.content%></p>
-<% @post.categories.each do |p| %>
-    <%= p.name %>
+<% @post.categories.each do |category| %>
+    <%= link_to category.name, category_path(category) %>
 <% end %>
 
 <!-- comment section ? -->
